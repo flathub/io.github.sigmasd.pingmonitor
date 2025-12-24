@@ -45,8 +45,8 @@ modules:
     sources:
       # app
       - type: archive
-        url: https://github.com/sigmaSd/pingmonitor/archive/refs/tags/0.8.0.tar.gz
-        sha256: e35a950a91ad7f64bd699c94ca32efa395d9758696ae4ac6587ee63755087970
+        url: https://github.com/sigmaSd/pingmonitor/archive/refs/tags/0.9.1.tar.gz
+        sha256: 79683143b82ef4d2be9388f2e2b5100d5fbb9a859f06015d3c4199d3cc3bc9c4
 
       # deno
       - type: archive
