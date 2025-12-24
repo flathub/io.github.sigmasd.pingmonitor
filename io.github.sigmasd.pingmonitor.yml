@@ -25,6 +25,17 @@ modules:
         url: https://github.com/iputils/iputils/archive/refs/tags/20240117.tar.gz
         sha256: a5d66e2997945b2541b8f780a7f5a5ec895d53a517ae1dc4f3ab762573edea9a
 
+  - name: iproute2
+    buildsystem: autotools
+    make-install-args:
+      - PREFIX=${FLATPAK_DEST}
+      - SBINDIR=${FLATPAK_DEST}/bin
+      - CONFDIR=${FLATPAK_DEST}/etc/iproute2
+    sources:
+      - type: archive
+        url: https://mirrors.edge.kernel.org/pub/linux/utils/net/iproute2/iproute2-6.2.0.tar.xz
+        sha256: 4d72730200ec5b2aabaa1a2f20553c6748292f065d9a154c7d5e22559df9fd62
+
   - name: pingmonitor
     buildsystem: simple
     build-options:
@@ -45,8 +56,8 @@ modules:
     sources:
       # app
       - type: archive
-        url: https://github.com/sigmaSd/pingmonitor/archive/refs/tags/0.8.0.tar.gz
-        sha256: e35a950a91ad7f64bd699c94ca32efa395d9758696ae4ac6587ee63755087970
+        url: https://github.com/sigmaSd/pingmonitor/archive/refs/tags/0.9.1.tar.gz
+        sha256: 79683143b82ef4d2be9388f2e2b5100d5fbb9a859f06015d3c4199d3cc3bc9c4
 
       # deno
       - type: archive
