@@ -24,7 +24,7 @@ modules:
       - type: archive
         url: https://github.com/iputils/iputils/releases/download/20250605/iputils-20250605.tar.gz
         sha256: 475c643e5f55b302286267b97d3ce0f47ca3489ced8aa0401b1eeb1e68228d6b
-     x-checker-data:
+        x-checker-data:
           type: anitya
           project-id: 1395
           url-template: https://github.com/iputils/iputils/releases/download/20250605/iputils-$version.tar.gz
@@ -39,7 +39,7 @@ modules:
       - type: archive
         url: https://mirrors.edge.kernel.org/pub/linux/utils/net/iproute2/iproute2-6.9.0.tar.xz
         sha256: 2f643d09ea11a4a2a043c92e2b469b5f73228cbf241ae806760296ed0ec413d0
-              x-checker-data:
+        x-checker-data:
           type: anitya
           project-id: 1392
           url-template: https://mirrors.edge.kernel.org/pub/linux/utils/net/iproute2/iproute2-$version.tar.xz
