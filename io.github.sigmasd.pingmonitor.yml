@@ -65,28 +65,28 @@ modules:
     sources:
       # app
       - type: archive
-        url: https://github.com/sigmaSd/pingmonitor/archive/refs/tags/0.9.2.tar.gz
-        sha256: f863ca0500e8377fda6ad7377d6d610d4369df6e79fe25858933a9c87db425d2
+        url: https://github.com/sigmaSd/pingmonitor/archive/refs/tags/0.9.3.tar.gz
+        sha256: 0df91fce2b3fe49371725bbab0abe599578a2cfa37a07bd9d6f280f4082e8f51
 
-      # deno
+    # deno
       - type: archive
-        url: https://github.com/denoland/deno/releases/download/v2.5.6/deno-x86_64-unknown-linux-gnu.zip
-        sha256: fd4f6abc1b6a134fa9a4dba56519f1631f44c88e04e4e3e9a8ff5975dfa66e1a
+        url: https://github.com/denoland/deno/releases/download/v2.6.5/deno-x86_64-unknown-linux-gnu.zip
+        sha256: e0f109b9ae6d828512bdbfc0524779ea42d7c117efd351860589c07506803436
         only-arches:
           - x86_64
       - type: archive
-        url: https://github.com/denoland/deno/releases/download/v2.5.6/denort-x86_64-unknown-linux-gnu.zip
-        sha256: a82b8690f7c26f6df0805a1145e02108f437a3a1ad6a05a7232bae01dab0ecdb
+        url: https://github.com/denoland/deno/releases/download/v2.6.5/denort-x86_64-unknown-linux-gnu.zip
+        sha256: 57f7988bd58151fa24874bbbdb67e5406de8d89c98211ad8a98f7fe494bdce73
         only-arches:
           - x86_64
       - type: archive
-        url: https://github.com/denoland/deno/releases/download/v2.5.6/deno-aarch64-unknown-linux-gnu.zip
-        sha256: f5e60ae3dfceb61e5e5a41f22129e40a8bc17f6393b59e75d7ca19ceef32d824
+        url: https://github.com/denoland/deno/releases/download/v2.6.5/deno-aarch64-unknown-linux-gnu.zip
+        sha256: 6613f3ccfc7e36d91b1a856d0a3d3a6d1286d09a9f0d775f99e50706e0ebc81d
         only-arches:
           - aarch64
       - type: archive
-        url: https://github.com/denoland/deno/releases/download/v2.5.6/denort-aarch64-unknown-linux-gnu.zip
-        sha256: ac4e9b29bd88cc0d7c7122f3befad60b9bb65762ef2ee06af437aaad35050f0a
+        url: https://github.com/denoland/deno/releases/download/v2.6.5/denort-aarch64-unknown-linux-gnu.zip
+        sha256: dcfde47afa64c699f0a5328140e0dfc9c6a71ca49bd4b78d3e312ec7a03f7477
         only-arches:
           - aarch64
 
