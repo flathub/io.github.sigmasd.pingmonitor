@@ -526,7 +526,7 @@
   },
   {
     "type": "inline",
-    "contents": "{\"scope\":\"sigmasd\",\"name\":\"gtk\",\"latest\":\"0.13.1\",\"versions\":{}}",
+    "contents": "{\"scope\":\"sigmasd\",\"name\":\"gtk\",\"latest\":\"0.14.0\",\"versions\":{}}",
     "dest": "vendor/jsr.io/@sigmasd/gtk",
     "dest-filename": "meta.json"
   },
@@ -541,7 +541,7 @@
     "type": "file",
     "url": "https://jsr.io/@sigmasd/gtk/0.13.1/src/libPaths/platform/darwin.ts",
     "sha256": "bf920230d2abecec6f14a5293d658c7e2720e7a6cc84a566b584f8e7b0ba56a8",
-    "dest": "vendor/jsr.io/@sigmasd/gtk/0.13.1/src/libPaths/platform",
+    "dest": "vendor/jsr.io/@sigmasd/gtk/0.13.1/src/#libpaths_8b87f/platform",
     "dest-filename": "darwin.ts"
   },
   {
@@ -590,7 +590,7 @@
     "type": "file",
     "url": "https://jsr.io/@sigmasd/gtk/0.13.1/src/libPaths/findLib.ts",
     "sha256": "8ef83c9088aa8341a6737ac490c823c5c663b00cd4a053ddde233477ced2958e",
-    "dest": "vendor/jsr.io/@sigmasd/gtk/0.13.1/src/libPaths",
+    "dest": "vendor/jsr.io/@sigmasd/gtk/0.13.1/src/#libpaths_8b87f",
     "dest-filename": "#findlib_80c0d.ts"
   },
   {
@@ -632,7 +632,7 @@
     "type": "file",
     "url": "https://jsr.io/@sigmasd/gtk/0.13.1/src/libPaths/mod.ts",
     "sha256": "dca4aad36a92f5ae1859f05f395fe89ababcc95bddde79ba52ed38aef9592e82",
-    "dest": "vendor/jsr.io/@sigmasd/gtk/0.13.1/src/libPaths",
+    "dest": "vendor/jsr.io/@sigmasd/gtk/0.13.1/src/#libpaths_8b87f",
     "dest-filename": "mod.ts"
   },
   {
@@ -646,21 +646,21 @@
     "type": "file",
     "url": "https://jsr.io/@sigmasd/gtk/0.13.1/src/libPaths/types.ts",
     "sha256": "15f40fce6fe4a63290ca05dbde2982299c9e5c778488b2aedd141ca7d191c2d4",
-    "dest": "vendor/jsr.io/@sigmasd/gtk/0.13.1/src/libPaths",
+    "dest": "vendor/jsr.io/@sigmasd/gtk/0.13.1/src/#libpaths_8b87f",
     "dest-filename": "types.ts"
   },
   {
     "type": "file",
     "url": "https://jsr.io/@sigmasd/gtk/0.13.1/src/libPaths/platform/unix.ts",
     "sha256": "d662552a157f239e1c1f33dea676daa7400cee509712d6cb2638bfc53ac933ca",
-    "dest": "vendor/jsr.io/@sigmasd/gtk/0.13.1/src/libPaths/platform",
+    "dest": "vendor/jsr.io/@sigmasd/gtk/0.13.1/src/#libpaths_8b87f/platform",
     "dest-filename": "unix.ts"
   },
   {
     "type": "file",
     "url": "https://jsr.io/@sigmasd/gtk/0.13.1/src/libPaths/platform/windows.ts",
     "sha256": "7e0747eabba0216dfb6a2f702532dc9afafb42b833e4606e9f8f9472b43e8c29",
-    "dest": "vendor/jsr.io/@sigmasd/gtk/0.13.1/src/libPaths/platform",
+    "dest": "vendor/jsr.io/@sigmasd/gtk/0.13.1/src/#libpaths_8b87f/platform",
     "dest-filename": "windows.ts"
   },
   {
