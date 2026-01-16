@@ -1,7 +1,7 @@
 app-id: io.github.sigmasd.pingmonitor
 
 runtime: org.gnome.Platform
-runtime-version: "49"
+runtime-version: '49'
 sdk: org.gnome.Sdk
 
 command: run.sh
@@ -37,8 +37,8 @@ modules:
       - CONFDIR=${FLATPAK_DEST}/etc/iproute2
     sources:
       - type: archive
-        url: https://mirrors.edge.kernel.org/pub/linux/utils/net/iproute2/iproute2-6.9.0.tar.xz
-        sha256: 2f643d09ea11a4a2a043c92e2b469b5f73228cbf241ae806760296ed0ec413d0
+        url: https://mirrors.edge.kernel.org/pub/linux/utils/net/iproute2/iproute2-6.18.0.tar.xz
+        sha256: 6ba520e1975e4c50dc931eeae91ea37c198b8a173744885f8895b84325f9d456
         x-checker-data:
           type: anitya
           project-id: 1392
@@ -51,7 +51,8 @@ modules:
         DENO_DIR: deno_dir
         DENORT_BIN: denort
     build-commands:
-      - ./deno compile --no-check --cached-only --vendor -o pingmon -A --include src/frontend/ --include src/backend  src/webview/main.ts
+      - ./deno compile --no-check --cached-only --vendor -o pingmon -A --include src/frontend/
+        --include src/backend  src/webview/main.ts
 
       - install -Dm755 pingmon /app/bin/pingmon
       - install -Dm755 run.sh /app/bin/run.sh
@@ -106,6 +107,7 @@ modules:
         dest-filename: run.sh
         commands:
           # https://discourse.gnome.org/t/how-to-fix-evolution-not-starting-after-update/25389
-          - WEBKIT_DISABLE_SANDBOX_THIS_IS_DANGEROUS=1 PLUGIN_URL=/app/bin exec pingmon "$@"
+          - WEBKIT_DISABLE_SANDBOX_THIS_IS_DANGEROUS=1 PLUGIN_URL=/app/bin exec pingmon
+            "$@"
 
       - deno-sources.json
