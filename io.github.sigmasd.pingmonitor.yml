@@ -14,7 +14,9 @@ finish-args:
   - --share=ipc
   # gtk4 wants to access gpu
   - --device=dri
-
+cleanup:
+  - ./include
+  - /share/man
 modules:
   - name: iputils
     buildsystem: meson
