@@ -37,8 +37,8 @@ modules:
       - CONFDIR=${FLATPAK_DEST}/etc/iproute2
     sources:
       - type: archive
-        url: https://mirrors.edge.kernel.org/pub/linux/utils/net/iproute2/iproute2-6.18.0.tar.xz
-        sha256: 6ba520e1975e4c50dc931eeae91ea37c198b8a173744885f8895b84325f9d456
+        url: https://mirrors.edge.kernel.org/pub/linux/utils/net/iproute2/iproute2-7.1.0.tar.xz
+        sha256: fd9fa1b95809417157ca83dd72957e3261bdbce896353cb936f80af0b33a4b5c
         x-checker-data:
           type: anitya
           project-id: 1392
