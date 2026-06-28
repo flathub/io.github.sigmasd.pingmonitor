@@ -1,7 +1,7 @@
 app-id: io.github.sigmasd.pingmonitor
 
 runtime: org.gnome.Platform
-runtime-version: '49'
+runtime-version: '50'
 sdk: org.gnome.Sdk
 
 command: run.sh
@@ -14,7 +14,9 @@ finish-args:
   - --share=ipc
   # gtk4 wants to access gpu
   - --device=dri
-
+cleanup:
+  - ./include
+  - /share/man
 modules:
   - name: iputils
     buildsystem: meson
@@ -37,8 +39,8 @@ modules:
       - CONFDIR=${FLATPAK_DEST}/etc/iproute2
     sources:
       - type: archive
-        url: https://mirrors.edge.kernel.org/pub/linux/utils/net/iproute2/iproute2-6.18.0.tar.xz
-        sha256: 6ba520e1975e4c50dc931eeae91ea37c198b8a173744885f8895b84325f9d456
+        url: https://mirrors.edge.kernel.org/pub/linux/utils/net/iproute2/iproute2-6.19.0.tar.xz
+        sha256: 9332213d35480b647086a70c302de8568de83455a98774d35de216c4ce191006
         x-checker-data:
           type: anitya
           project-id: 1392
