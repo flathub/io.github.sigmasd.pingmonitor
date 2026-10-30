@@ -24,12 +24,14 @@ modules:
       - -DBUILD_PING=true
     sources:
       - type: archive
-        url: https://github.com/iputils/iputils/releases/download/20250605/iputils-20250605.tar.gz
+        url: 
+          https://github.com/iputils/iputils/releases/download/20250605/iputils-20250605.tar.gz
         sha256: 475c643e5f55b302286267b97d3ce0f47ca3489ced8aa0401b1eeb1e68228d6b
         x-checker-data:
           type: anitya
           project-id: 1395
-          url-template: https://github.com/iputils/iputils/releases/download/20250605/iputils-$version.tar.gz
+          url-template: 
+            https://github.com/iputils/iputils/releases/download/20250605/iputils-$version.tar.gz
 
   - name: iproute2
     buildsystem: autotools
@@ -39,12 +41,14 @@ modules:
       - CONFDIR=${FLATPAK_DEST}/etc/iproute2
     sources:
       - type: archive
-        url: https://mirrors.edge.kernel.org/pub/linux/utils/net/iproute2/iproute2-7.2.0.tar.xz
-        sha256: 4c2fa124c2cf0afd7ca34d1eeacba6ba048a56f6374e2aab93dafbdbd4eea9c0
+        url: 
+          https://mirrors.edge.kernel.org/pub/linux/utils/net/iproute2/iproute2-7.3.0.tar.xz
+        sha256: 5c1789d290bba048a6135ed1ab81b0402dd0fb528d1f1421765c42b1fc3d6289
         x-checker-data:
           type: anitya
           project-id: 1392
-          url-template: https://mirrors.edge.kernel.org/pub/linux/utils/net/iproute2/iproute2-$version.tar.xz
+          url-template: 
+            https://mirrors.edge.kernel.org/pub/linux/utils/net/iproute2/iproute2-$version.tar.xz
 
   - name: pingmonitor
     buildsystem: simple
@@ -72,34 +76,40 @@ modules:
 
     # deno
       - type: archive
-        url: https://github.com/denoland/deno/releases/download/v2.6.5/deno-x86_64-unknown-linux-gnu.zip
+        url: 
+          https://github.com/denoland/deno/releases/download/v2.6.5/deno-x86_64-unknown-linux-gnu.zip
         sha256: e0f109b9ae6d828512bdbfc0524779ea42d7c117efd351860589c07506803436
         only-arches:
           - x86_64
       - type: archive
-        url: https://github.com/denoland/deno/releases/download/v2.6.5/denort-x86_64-unknown-linux-gnu.zip
+        url: 
+          https://github.com/denoland/deno/releases/download/v2.6.5/denort-x86_64-unknown-linux-gnu.zip
         sha256: 57f7988bd58151fa24874bbbdb67e5406de8d89c98211ad8a98f7fe494bdce73
         only-arches:
           - x86_64
       - type: archive
-        url: https://github.com/denoland/deno/releases/download/v2.6.5/deno-aarch64-unknown-linux-gnu.zip
+        url: 
+          https://github.com/denoland/deno/releases/download/v2.6.5/deno-aarch64-unknown-linux-gnu.zip
         sha256: 6613f3ccfc7e36d91b1a856d0a3d3a6d1286d09a9f0d775f99e50706e0ebc81d
         only-arches:
           - aarch64
       - type: archive
-        url: https://github.com/denoland/deno/releases/download/v2.6.5/denort-aarch64-unknown-linux-gnu.zip
+        url: 
+          https://github.com/denoland/deno/releases/download/v2.6.5/denort-aarch64-unknown-linux-gnu.zip
         sha256: dcfde47afa64c699f0a5328140e0dfc9c6a71ca49bd4b78d3e312ec7a03f7477
         only-arches:
           - aarch64
 
       # libwebview ffi library
       - type: file
-        url: https://github.com/webview/webview_deno/releases/download/0.9.0/libwebview.x86_64.so
+        url: 
+          https://github.com/webview/webview_deno/releases/download/0.9.0/libwebview.x86_64.so
         sha256: 5a66b75e14e9360d5c24ba53574e5ed5b1b476843623721aae8fc47a15a69a42
         only-arches:
           - x86_64
       - type: file
-        url: https://github.com/webview/webview_deno/releases/download/0.9.0/libwebview.aarch64.so
+        url: 
+          https://github.com/webview/webview_deno/releases/download/0.9.0/libwebview.aarch64.so
         sha256: e9ee12c1fe6f0c587c37cca827586bf5c202fd7e04afcd01b780c993878d132a
         only-arches:
           - aarch64
